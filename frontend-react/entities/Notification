@@ -1,0 +1,42 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "User who receives the notification"
+    },
+    "title": {
+      "type": "string",
+      "description": "Notification title"
+    },
+    "message": {
+      "type": "string",
+      "description": "Notification message"
+    },
+    "course_id": {
+      "type": "string",
+      "description": "Related course"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether notification has been read"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "material",
+        "test",
+        "practice",
+        "general"
+      ],
+      "default": "general"
+    }
+  },
+  "required": [
+    "user_id",
+    "title",
+    "message"
+  ]
+}

@@ -1,0 +1,8 @@
+node_modules/
+.env
+backend/src/uploads/*.jpg
+backend/src/uploads/*.png
+backend/src/uploads/*.pdf
+*.log
+dist/
+frontend-react/dist/
