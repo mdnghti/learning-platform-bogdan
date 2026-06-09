@@ -4,9 +4,9 @@
   "description": "Interactive web platform for learning computer science",
   "main": "backend/src/server.js",
   "scripts": {
-    "start": "node backend/src/server.js",
+    "start": "npm --prefix frontend-react run build && node backend/src/server.js",
     "dev": "nodemon backend/src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "npm install && npm --prefix frontend-react install && npm --prefix frontend-react run build"
   },
   "keywords": ["learning", "platform", "education"],
   "license": "ISC",
